@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "name": "TRIPLE DRIP GLOSS BOMB TRIO",
+    "imgUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_FALL23_T2PRODUCT_EDITORIAL_BUNDLE_LIP_GLOSSBOMB_FENTYGLOW_HOTCHOCOLIT-HEAT_CREAM_1200X1500_72DPI.jpg?v=1686613546",
+    "price": 50
+  },
+  {
+    "id": 2,
+    "name": "FENTY EAU DE PARFUM TRAVEL SET",
+    "imgUrl": "https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FF_SMR23_T2_PRODUCT_ECOM_TRAVELSET_REFILL_WITHVIALS_1200x1500_72DPI.jpg?v=1692746442",
+     "price": 95
+  },
+  {
+    "id": 3,
+    "name": "Mothership XI: Sunlit Seduction",
+    "imgUrl": "https://www.patmcgrath.com/cdn/shop/files/PMG_PDP_MSXI_OPEN_f16453d3-139d-45e8-a4ec-9ad5337a8b54.jpg?v=1689013962&width=1100",
+    "price": 128
+  },
+  {
+    "id": 4,
+    "name": "Skin Fetish: Divine Blush",
+    "imgUrl": "https://www.patmcgrath.com/cdn/shop/products/PMG_PDP_DIVINE_BRONZER_Blush_Divine_Rose_III_Open.jpg?v=1680182972&width=1100",
+     "price": 39
+  },
+  {
+    "id": 5,
+    "name": "Tower 28 Beauty ShineOn Lip Jelly",
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2926/6108/files/ShineOn_20XoXo.png?v=1692373890&width=713",
+    "price": 16
+  },
+  {
+    "id": 6,
+    "name": "Charlotte Tilbury Mini Airbrush Flawless Setting Spray Duo Set",
+    "imgUrl": "https://www.sephora.com/productimages/sku/s2705416-main-zoom.jpg?imwidth=1224",
+    "price": 32
+  },
+ {
+    "id": 7,
+    "name": "Anastasia Beverly Hills Fall Romance Eyeshadow Palette",
+    "imgUrl": "https://www.sephora.com/productimages/sku/s2716645-main-zoom.jpg?imwidth=3000",
+    "price": 55
+  },
+ {
+    "id": 8,
+    "name": "Dior Diorshow 10 Couleurs Eye Makeup Palette",
+    "imgUrl": "https://www.sephora.com/productimages/sku/s2639433-av-2-zoom.jpg?imwidth=3000",
+    "price": 130
+  },
+ {
+    "id": 9,
+    "name": "Bobbi Brown Sculpted Glow Face Palette",
+    "imgUrl": "https://www.bobbibrowncosmetics.com/media/export/cms/products/responsive/bb_sku_EYT001_1x1_0.png?width=768&height=768",
+    "price": 59
+  },
+ {
+    "id": 10,
+    "name": "lancome",
+    "imgUrl": "https://cdn.glitch.global/465e0596-2da9-4042-bf6d-1b1fc112754b/f1fdaab3-9627-40d5-a380-6db458005d64.image.png?v=1698026751343",
+    "price": 89
+  }
+  ]

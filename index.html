@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>full-page-tab-bar</title>
+    <!--&#x2764;-->
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <!--body onload="defaultLoad()"-->
+  <body onload="defultpage()">
+    <!--heart loader-->
+    <div id="loader">
+      <div class="lds-heart"><div></div></div>
+      <label for="lds-heart" id="loading">Loading...</label>
+    </div>
+
+    <!--actual page-->
+    <div class="topbar">
+      <button id="df" name="df" class="tp" onclick="nav(this,`#656d4f`,`home`)">
+        Home
+      </button>
+      <button class="tp" onclick="nav(this,`#69674a`,`cart`)">Cart</button>
+      <button class="tp" onclick="nav(this,`#827f59`,`login`)">Login</button>
+      <button class="tp" onclick="nav(this,`#b76b3e`,`about`)">About</button>
+    </div>
+    <!--Home-->
+    <div id="home" class="content">
+      <h2>&#9733; New items &#9733;</h2>
+      <video width = "320px" height ="240px" autoplay loop>
+        <source src ="https://cdn.shopify.com/videos/c/vp/c8e0b169079c4991b8f141ef603b8178/c8e0b169079c4991b8f141ef603b8178.HD-1080p-7.2Mbps-18107456.mp4"
+                type = "video/mp4"
+                >
+      </video>
+      <!--New product image slider section-->
+      <div id="Latest">
+        <div class="item">
+          <img
+            id="itemImg"
+            src="https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_FALL23_T2PRODUCT_EDITORIAL_BUNDLE_LIP_GLOSSBOMB_FENTYGLOW_HOTCHOCOLIT-HEAT_CREAM_1200X1500_72DPI.jpg?v=1686613546"
+            alt="item image"
+          />
+          <p id="itemDs">TRIPLE DRIP GLOSS BOMB TRIO</p>
+        </div>
+        <div class="slider">
+          <a class="previous" onclick="findItem(-1)">❮</a>
+          <a class="next" onclick="findItem(1)">❯</a>
+        </div>
+      </div>
+      <!--brows products-->
+      <div>
+        <!--grid container-->
+        <div id="Homegrid_containter">
+          <div class="Shopitem" id="Shop1">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB_FALL23_T2PRODUCT_EDITORIAL_BUNDLE_LIP_GLOSSBOMB_FENTYGLOW_HOTCHOCOLIT-HEAT_CREAM_1200X1500_72DPI.jpg?v=1686613546"
+              alt="item image"
+            />
+            <p>TRIPLE DRIP GLOSS BOMB TRIO</p>
+
+            <button class="addToCart" onclick="addItem(`1`)">
+              <span class="add">&plus;</span>
+            </button>
+          </div>
+          <div class="Shopitem" id="Shop2">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FF_SMR23_T2_PRODUCT_ECOM_TRAVELSET_REFILL_WITHVIALS_1200x1500_72DPI.jpg?v=1692746442"
+              alt="item image"
+            />
+            <p>FENTY EAU DE PARFUM TRAVEL SET</p>
+            <button class="addToCart" onclick="addItem(`2`)">
+              <span class="add">&plus;</span>
+            </button>
+          </div>
+          <div class="Shopitem" id="Shop3">
+            <img
+              src="https://www.patmcgrath.com/cdn/shop/files/PMG_PDP_MSXI_OPEN_f16453d3-139d-45e8-a4ec-9ad5337a8b54.jpg?v=1689013962&width=1100"
+            />
+
+            <p>Mothership XI: Sunlit Seduction</p>
+            <button class="addToCart" onclick="addItem(`3`)">
+              <span class="add">&plus;</span>
+            </button>
+          </div>
+
+          <div class="Shopitem" id="Shop4">
+            <img
+              src="https://www.patmcgrath.com/cdn/shop/products/PMG_PDP_DIVINE_BRONZER_Blush_Divine_Rose_III_Open.jpg?v=1680182972&width=1100"
+            />
+
+            <p>Skin Fetish: Divine Blush</p>
+            <button class="addToCart" onclick="addItem(`4`)">
+              <span class="add">&plus;</span>
+            </button>
+          </div>
+          <div class="Shopitem" id="Shop5">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2926/6108/files/ShineOn_20XoXo.png?v=1692373890&width=713"
+            />
+            <p>Tower 28 Beauty ShineOn Lip Jelly</p>
+            <button class="addToCart" onclick="addItem(`5`)">
+              <span class="add">&plus;</span>
+            </button>
+          </div>
+
+          <div class="Shopitem" id="Shop6">
+            <img
+              src="https://www.sephora.com/productimages/sku/s2705416-main-zoom.jpg?imwidth=1224"
+            />
+            <p>
+              Charlotte Tilbury Mini Airbrush Flawless Setting Spray Duo Set
+            </p>
+            <button class="addToCart" onclick="addItem(`6`)">
+              <span class="add">&plus;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cart-->
+    <div id="cart" class="content">
+       <h2>&#9733; Cart &#9733;</h2>
+      <p id="CartTop">Opps, nothing added yet!</p>
+      <!--Shopping Cart List-->
+      <div id="cartList">
+        <div id="ListOfItems"></div>
+      </div>
+      <div id="subtotal">Subtotal &#36;</div>
+    </div>
+    <!--Login-->
+    <div id="login" class="content">
+      <h2>&#9733; Welcome back &#9733;</h2>
+      <div class="login_form">
+        <div class="form">
+          <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" />
+            <div class="checkbox">
+              <label for="checkbox" id="cb">
+                <input type="checkbox" id="checkbox" />
+                Remember me</label
+              >
+            </div>
+            <button class="buttons" id="loginbtn" type="submit">login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+<!--About-->
+    <div id="about" class="content">
+      <h2>&#9733; Let's get in touch &#9733;</h2>
+      <!--form to get in touch -->
+      <!--jquery library-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <form
+        id="aboutForm"
+        name="emailForm"
+        class="login_form"
+        action = "<?php 
+                      echo htmlspecialchars($_SERVER['PHP_SELF']);
+                   ?>"
+        method="post"
+      ><!--action = "email.php"  ** action is expecting only a URL not a php code action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>-->
+        <!--action = "email.php" method="post"-->
+        <label for="name">Name</label>
+        <input type="text" required name="name" id = "abtName"/>
+
+        <label for="email">Email</label>
+        <input type="text" required name="email" id = "abtEmail" />
+
+        <button class="buttons" name = "aboutSubmit" type="submit" value="Send">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+ <!--force it to load all html before js-->
+
+  <footer></footer>
+</html>
